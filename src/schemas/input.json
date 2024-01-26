@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "claimCertificateId": {
+      "type": "string"
+    },
+    "certificateId": {
+      "type": "string"
+    },
+    "certificatePem": {
+      "type": "string"
+    },
+    "templateArn": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "claimCertificateId",
+    "certificateId",
+    "certificatePem",
+    "templateArn",
+    "clientId"
+  ],
+  "additionalProperties": false
+}
